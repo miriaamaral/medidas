@@ -9,7 +9,7 @@ E aí, meu 🐙! Este projeto é um laboratório de estudos para entender e visu
 ## 🎥 Veja as Medidas em Ação!
 
 Que tal dar uma olhada na responsividade de cada medida ao vivo?
-[Medidas (Seu Deploy)](https://miriaamaral.github.io/medidas/)
+[Medidas](https://miriaamaral.github.io/medidas/)
 
 
 <img width="1366" height="645" alt="medidas photo" src="https://github.com/user-attachments/assets/4714c30f-df44-4af3-b8d4-99766f0ad365" />
