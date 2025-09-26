@@ -58,12 +58,12 @@ A estrutura HTML é simples e direta.
     <div class="caixa box-viewport">Caixa com vw e vh - Medida Relativa</div>
     <div class="caixa box-rem">Caixa com rem - Medida Relativa</div>
 </body>
-</html>```
+</html>
 
 #### **SCSS/SASS**
 A estrutura SCSS mantive as anotações do projeto para ficar mais facil absorver as aplicações: 
 
-```// Anotações sobre Medidas no SCSS/SASS
+// Anotações sobre Medidas no SCSS/SASS
 
 // Reset global para remover espaçamentos padrão do navegador
 * {
