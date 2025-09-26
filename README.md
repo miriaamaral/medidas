@@ -12,6 +12,7 @@ Que tal dar uma olhada na responsividade de cada medida ao vivo?
 [Medidas (Seu Deploy)](https://miriaamaral.github.io/medidas/)
 
 
+<img width="1366" height="645" alt="medidas photo" src="https://github.com/user-attachments/assets/4714c30f-df44-4af3-b8d4-99766f0ad365" />
 
 ---
 
@@ -40,86 +41,6 @@ Você usou o SASS/SCSS (pré-processador) para escrever o CSS, e isso é ótimo 
 ### ⚙️ As Medidas no Código
 
 As diferentes medidas são aplicadas nas caixas do arquivo `style.scss`, que usa pré-processador SASS para estilos mais organizados.
-
-#### **HTML**
-A estrutura HTML é simples e direta.
-html
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medidas</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="caixa box-fixa">Caixa com o px - Medida Fixa</div>
-    <div class="caixa box-porcentagem">Caixa com % - Medida Relativa</div>
-    <div class="caixa box-viewport">Caixa com vw e vh - Medida Relativa</div>
-    <div class="caixa box-rem">Caixa com rem - Medida Relativa</div>
-</body>
-</html>
-
-
-
-### **SCSS/SASS**
-A estrutura SCSS mantive as anotações do projeto para ficar mais facil absorver as aplicações: 
-
-Anotações sobre Medidas no SCSS/SASS
-
-Reset global para remover espaçamentos padrão do navegador
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; // Garante que padding e border não alterem o tamanho total do elemento
-}
-
-Estilo base para todas as caixas
-formas de selecionar as tags => .nomedaclass | selecionar ID => #nomedAID
-.caixa { 
-  background-color: gold;
-  border: solid 3px chocolate;
-  text-align: center;
-  font-size: 1rem; // Definindo o tamanho da fonte para 1rem como base
-  padding: 1rem; // Adicionando padding com unidade relativa
-}
-
-.box-fixa {
-PX: Medida fixa.
-1 pixel = 1 ponto na tela. O tamanho não muda com o zoom ou tamanho da tela.
-Ótima para espaçamentos e bordas, onde a consistência visual é importante.
-  width: 300px;
-  height: 100px;
-}
-
-.box-porcentagem {
-%: Medida relativa ao elemento pai.
-A largura é 80% do elemento que a contém. Se o pai mudar, ela também muda.
-Ideal para criar layouts que se ajustam, como em um design responsivo.
-  width: 80%;
-  height: 100px; 
-  A altura pode ser fixa, se necessário, para manter a proporção
-}
-
-.box-viewport {
-VW (Viewport Width) e VH (Viewport Height): Medidas relativas à tela inteira.
-1vw = 1% da largura da tela. 1vh = 1% da altura da tela.
-Perfeitas para elementos que precisam sempre ocupar uma porcentagem específica da tela.
-  width: 50vw;
-  height: 30vh;
-}
-
-.box-rem {
-REM (Root Em): Medida relativa ao tamanho da fonte do elemento raiz (<html>).
-Por padrão, 1rem = 16px. Se você mudar o font-size do <html>, todos os rems mudam.
-Excelente para acessibilidade, pois o design se adapta se o usuário alterar o tamanho da fonte.
-  width: 32rem;
-  height: 14.4rem;
-
-Anotações Adicionais sobre REM e responsividade:
-Essa abordagem é muito usada em design responsivo para que o layout escale com a fonte.
-Por exemplo, você pode usar media queries para mudar o font-size do <html> em telas menores.
-}
 
 
 ### *⚙️ Como Rodar o Projeto (Localmente):*
