@@ -43,7 +43,7 @@ As diferentes medidas são aplicadas nas caixas do arquivo `style.scss`, que usa
 
 #### **HTML**
 A estrutura HTML é simples e direta.
-```html
+html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
