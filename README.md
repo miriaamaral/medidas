@@ -11,10 +11,7 @@ E aí, meu 🐙! Este projeto é um laboratório de estudos para entender e visu
 Que tal dar uma olhada na responsividade de cada medida ao vivo?
 [Medidas (Seu Deploy)](https://miriaamaral.github.io/medidas/)
 
-<img width="1366" height="640" alt="Visão da medida fixa px" src="https://via.placeholder.com/600x300.png?text=IMAGEM+DA+CAIXA+COM+PX" />
-<img width="1366" height="643" alt="Visão da medida relativa %" src="https://via.placeholder.com/600x300.png?text=IMAGEM+DA+CAIXA+COM+%25" />
-<img width="1366" height="637" alt="Visão da medida vw/vh" src="https://via.placeholder.com/600x300.png?text=IMAGEM+DA+CAIXA+COM+VW+e+VH" />
-<img width="1366" height="641" alt="Visão da medida rem" src="https://via.placeholder.com/600x300.png?text=IMAGEM+DA+CAIXA+COM+REM" />
+
 
 ---
 
@@ -61,10 +58,11 @@ A estrutura HTML é simples e direta.
     <div class="caixa box-viewport">Caixa com vw e vh - Medida Relativa</div>
     <div class="caixa box-rem">Caixa com rem - Medida Relativa</div>
 </body>
-</html>
+</html>```
 
 #### **SCSS/SASS**
 A estrutura SCSS mantive as anotações do projeto para ficar mais facil absorver as aplicações: 
+
 ```// Anotações sobre Medidas no SCSS/SASS
 
 // Reset global para remover espaçamentos padrão do navegador
@@ -74,7 +72,7 @@ A estrutura SCSS mantive as anotações do projeto para ficar mais facil absorve
   box-sizing: border-box; // Garante que padding e border não alterem o tamanho total do elemento
 }
 
-```// Estilo base para todas as caixas
+// Estilo base para todas as caixas
 .caixa { // formas de selecionar as tags => .nomedaclass | selecionar ID => #nomedAID
   background-color: gold;
   border: solid 3px chocolate;
@@ -83,7 +81,7 @@ A estrutura SCSS mantive as anotações do projeto para ficar mais facil absorve
   padding: 1rem; // Adicionando padding com unidade relativa
 }
 
-```.box-fixa {
+.box-fixa {
   // PX: Medida fixa.
   // 1 pixel = 1 ponto na tela. O tamanho não muda com o zoom ou tamanho da tela.
   // Ótima para espaçamentos e bordas, onde a consistência visual é importante.
@@ -91,7 +89,7 @@ A estrutura SCSS mantive as anotações do projeto para ficar mais facil absorve
   height: 100px;
 }
 
-```.box-porcentagem {
+.box-porcentagem {
   // %: Medida relativa ao elemento pai.
   // A largura é 80% do elemento que a contém. Se o pai mudar, ela também muda.
   // Ideal para criar layouts que se ajustam, como em um design responsivo.
@@ -99,7 +97,7 @@ A estrutura SCSS mantive as anotações do projeto para ficar mais facil absorve
   height: 100px; // A altura pode ser fixa, se necessário, para manter a proporção
 }
 
-```.box-viewport {
+.box-viewport {
   // VW (Viewport Width) e VH (Viewport Height): Medidas relativas à tela inteira.
   // 1vw = 1% da largura da tela. 1vh = 1% da altura da tela.
   // Perfeitas para elementos que precisam sempre ocupar uma porcentagem específica da tela.
@@ -107,7 +105,7 @@ A estrutura SCSS mantive as anotações do projeto para ficar mais facil absorve
   height: 30vh;
 }
 
-```.box-rem {
+.box-rem {
   // REM (Root Em): Medida relativa ao tamanho da fonte do elemento raiz (<html>).
   // Por padrão, 1rem = 16px. Se você mudar o font-size do <html>, todos os rems mudam.
   // Excelente para acessibilidade, pois o design se adapta se o usuário alterar o tamanho da fonte.
@@ -117,6 +115,7 @@ A estrutura SCSS mantive as anotações do projeto para ficar mais facil absorve
   // Essa abordagem é muito usada em design responsivo para que o layout escale com a fonte.
   // Por exemplo, você pode usar media queries para mudar o font-size do <html> em telas menores.
 }
+
 
 ### *⚙️ Como Rodar o Projeto (Localmente):*
 
