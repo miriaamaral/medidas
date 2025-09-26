@@ -60,20 +60,23 @@ A estrutura HTML é simples e direta.
 </body>
 </html>
 
-#### **SCSS/SASS**
+
+
+### **SCSS/SASS**
 A estrutura SCSS mantive as anotações do projeto para ficar mais facil absorver as aplicações: 
 
-// Anotações sobre Medidas no SCSS/SASS
+Anotações sobre Medidas no SCSS/SASS
 
-// Reset global para remover espaçamentos padrão do navegador
+Reset global para remover espaçamentos padrão do navegador
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; // Garante que padding e border não alterem o tamanho total do elemento
 }
 
-// Estilo base para todas as caixas
-.caixa { // formas de selecionar as tags => .nomedaclass | selecionar ID => #nomedAID
+Estilo base para todas as caixas
+formas de selecionar as tags => .nomedaclass | selecionar ID => #nomedAID
+.caixa { 
   background-color: gold;
   border: solid 3px chocolate;
   text-align: center;
@@ -82,38 +85,40 @@ A estrutura SCSS mantive as anotações do projeto para ficar mais facil absorve
 }
 
 .box-fixa {
-  // PX: Medida fixa.
-  // 1 pixel = 1 ponto na tela. O tamanho não muda com o zoom ou tamanho da tela.
-  // Ótima para espaçamentos e bordas, onde a consistência visual é importante.
+PX: Medida fixa.
+1 pixel = 1 ponto na tela. O tamanho não muda com o zoom ou tamanho da tela.
+Ótima para espaçamentos e bordas, onde a consistência visual é importante.
   width: 300px;
   height: 100px;
 }
 
 .box-porcentagem {
-  // %: Medida relativa ao elemento pai.
-  // A largura é 80% do elemento que a contém. Se o pai mudar, ela também muda.
-  // Ideal para criar layouts que se ajustam, como em um design responsivo.
+%: Medida relativa ao elemento pai.
+A largura é 80% do elemento que a contém. Se o pai mudar, ela também muda.
+Ideal para criar layouts que se ajustam, como em um design responsivo.
   width: 80%;
-  height: 100px; // A altura pode ser fixa, se necessário, para manter a proporção
+  height: 100px; 
+  A altura pode ser fixa, se necessário, para manter a proporção
 }
 
 .box-viewport {
-  // VW (Viewport Width) e VH (Viewport Height): Medidas relativas à tela inteira.
-  // 1vw = 1% da largura da tela. 1vh = 1% da altura da tela.
-  // Perfeitas para elementos que precisam sempre ocupar uma porcentagem específica da tela.
+VW (Viewport Width) e VH (Viewport Height): Medidas relativas à tela inteira.
+1vw = 1% da largura da tela. 1vh = 1% da altura da tela.
+Perfeitas para elementos que precisam sempre ocupar uma porcentagem específica da tela.
   width: 50vw;
   height: 30vh;
 }
 
 .box-rem {
-  // REM (Root Em): Medida relativa ao tamanho da fonte do elemento raiz (<html>).
-  // Por padrão, 1rem = 16px. Se você mudar o font-size do <html>, todos os rems mudam.
-  // Excelente para acessibilidade, pois o design se adapta se o usuário alterar o tamanho da fonte.
+REM (Root Em): Medida relativa ao tamanho da fonte do elemento raiz (<html>).
+Por padrão, 1rem = 16px. Se você mudar o font-size do <html>, todos os rems mudam.
+Excelente para acessibilidade, pois o design se adapta se o usuário alterar o tamanho da fonte.
   width: 32rem;
   height: 14.4rem;
-  // Anotações Adicionais sobre REM e responsividade:
-  // Essa abordagem é muito usada em design responsivo para que o layout escale com a fonte.
-  // Por exemplo, você pode usar media queries para mudar o font-size do <html> em telas menores.
+
+Anotações Adicionais sobre REM e responsividade:
+Essa abordagem é muito usada em design responsivo para que o layout escale com a fonte.
+Por exemplo, você pode usar media queries para mudar o font-size do <html> em telas menores.
 }
 
 
