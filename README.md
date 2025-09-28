@@ -37,7 +37,7 @@ Eu usei o SASS/SCSS (pré-processador) para escrever o CSS, e isso é ótimo par
 
 As medidas (`px`, `rem`, `vw`, etc.) são parte do CSS padrão. O **SASS (ou SCSS)** é apenas um intermediário; ele pega seu código organizado e o **compila** para o CSS puro, que é o que o navegador realmente lê.
 
-* **Boas Práticas de Medida com SASS:** O SASS brilha ao usar medidas relativas. A gente pode definir uma variável (`$font-base: 1rem;`) e usá-la em todo o projeto. Se precisar mudar a escala do layout, a gente altera **apenas a variável** e todos os elementos que usam `rem` escalam automaticamente, sem tocar no CSS individual!
+* **Boas Práticas de Medida com SASS:** O SASS brilha ao usar medidas relativas. A gente pode definir uma variável (`$font-base: 1rem;`) e usá-la em todo o projeto. Se precisarmos mudar a escala do layout, a gente altera **apenas a variável** e todos os elementos que usam `rem` escalam automaticamente, sem tocar no CSS individual!
 
 ---
 
@@ -58,6 +58,8 @@ As diferentes medidas são aplicadas nas caixas do arquivo `style.scss`, que usa
 
 3.  *Abra o arquivo index.html no seu navegador.*
     *Se você usou SASS, lembre-se de rodar o comando de compilação (ex: npm run sass:watch se tiver configurado) para garantir que o style.css esteja atualizado antes de abrir o arquivo.
+
+4. Ou instale a extensão de SASS e clique em watch SaSS para que o arquivo seja compilado.
 
 ---
 
