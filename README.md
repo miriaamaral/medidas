@@ -31,10 +31,13 @@ Aqui estão os conceitos e a aplicação de cada unidade no código:
 
 ### 🛠 CSS vs. SASS/SCSS: Onde as Medidas se Destacam
 
-Você usou o SASS/SCSS (pré-processador) para escrever o CSS, e isso é ótimo para organização, mas é importante lembrar:
+Eu usei o SASS/SCSS (pré-processador) para escrever o CSS, e isso é ótimo para organização, mas é importante lembrar:
 
-* **Diferença de Renderização de Medidas:** Não há diferença! As medidas (`px`, `rem`, `vw`, etc.) são parte do CSS padrão. O **SASS (ou SCSS)** é apenas um intermediário; ele pega seu código organizado e o **compila** para o CSS puro, que é o que o navegador realmente lê.
-* **Boas Práticas de Medida com SASS:** O SASS brilha ao usar medidas relativas. Você pode definir uma variável (`$font-base: 1rem;`) e usá-la em todo o projeto. Se precisar mudar a escala do layout, você altera **apenas a variável** e todos os elementos que usam `rem` escalam automaticamente, sem tocar no CSS individual!
+* **Diferença de Renderização de Medidas:** Não há diferença kkkkk era só parte do suspense mesmo!
+
+As medidas (`px`, `rem`, `vw`, etc.) são parte do CSS padrão. O **SASS (ou SCSS)** é apenas um intermediário; ele pega seu código organizado e o **compila** para o CSS puro, que é o que o navegador realmente lê.
+
+* **Boas Práticas de Medida com SASS:** O SASS brilha ao usar medidas relativas. A gente pode definir uma variável (`$font-base: 1rem;`) e usá-la em todo o projeto. Se precisar mudar a escala do layout, a gente altera **apenas a variável** e todos os elementos que usam `rem` escalam automaticamente, sem tocar no CSS individual!
 
 ---
 
